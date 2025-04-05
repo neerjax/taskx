@@ -3,7 +3,7 @@ import { collection, onSnapshot, doc, updateDoc, query, orderBy } from 'firebase
 import { db } from '../services/firebase';
 import { Task } from '../types/Task';
 import { TaskItem } from './TaskItem';
-import { TaskFilters, TaskFilters as TaskFiltersType, SortOption } from './TaskFilters';
+import { TaskFilters as TaskFiltersType, SortOption } from './TaskFilters';
 
 interface TaskListProps {
   status: Task['status'];
